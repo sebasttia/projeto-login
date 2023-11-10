@@ -7,9 +7,55 @@
     #056CF2
     #3DADF2
     #88F2F2
- */
-
+*/
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+body, html {
+    background-color: #0420BF;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.633);
+
+    transition: width 0.5s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background:#044BD9 url(../imagem/pexels-vitor-lopes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
